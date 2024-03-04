@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="header-wrapper">
+                <div id="dark-mode">
+                    <div id="dark-btn"></div>
+                    <p>Dark Mode</p>
+                </div>
+                <div id="header-search">
+                    <i class='bx bx-search-alt-2'></i>
+                    <input type="search" placeholder="Search for your preffered city..." id="search_city">
+                </div>
+                <button id="location">
+                    <i class='bx bx-current-location' ></i>
+                    Current Location
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container" style="position: relative;">
+        <span class="loader"></span>
+    </div>
+    <main>
+        <section class="container" id="section">
+            <div id="section1">
+                <div class="country-time" id="country-time">
+                   
+                </div>
+                <div class="country-weather" id="country-weather">
+                    
+                </div>
+            </div>
+
+            <div id="section2">
+                <div id="forecast">
+                    <p>5 Days Forecast:</p>
+                    <ul id="day5ul">
+                       
+                    </ul>
+                </div>
+
+                <div id="day-wrapper">
+                    <p>Hourly Forecast:</p>
+                    <div id="days">
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./utily.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
